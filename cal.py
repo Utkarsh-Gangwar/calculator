@@ -53,28 +53,24 @@ def eq():
 
 def sum():
    global sol, num1, opr1
-   print(num1,'sum')
    sol=sol+num1
    num1=0
 
 
 def sub1():
    global sol, num1, opr1
-   print(num1,'sub')
    sol=sol-num1
    num1=0
 
 
 def div1():
    global sol, num1, opr1
-   print(num1,'div')
    sol=sol/num1
    num1=0
 
 
 def mul1():
    global sol, num1, opr1
-   print(num1,'mul')
    sol=sol*num1
    num1=0
 
