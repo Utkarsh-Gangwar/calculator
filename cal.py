@@ -39,7 +39,6 @@ def eq():
          if opr1 == '*':
             mul1()
          opr1=a[i]
-   print(sol)
    if num1 != 0:
       if opr1 == '+':
          sum()
@@ -49,7 +48,6 @@ def eq():
          div1()
       if opr1 == '*':
          mul1()
-   print(sol,'sol')
    l['text'] = a + "=" + str(sol)
 
 
