@@ -1,9 +1,21 @@
 from tkinter import *
+
+#variable for text to be displayed
 a=" "
+
+#first number
 b=0
+
+#second number
 c=0
+
+
 d=0
+
+#to find out is any operator hase been presed or not and what operator hase been presed
 i=0
+
+#to reset the screen
 def clr():
    global a,b,c,d,i
    a=" "
@@ -12,6 +24,8 @@ def clr():
    d=0
    i=0
    l['text']=a
+   
+#to update text after every button presed   
 def text_update():
    if i==0:
       a=str(b)
@@ -24,6 +38,8 @@ def text_update():
    if i==4:
       a=str(b)+'/'+str(c)
    l['text']=a
+   
+#to find which operator hase been pressed
 def i_up(n):
    global i,b
    i=n
@@ -48,6 +64,8 @@ def i_up(n):
       if i==4:
          a=str(b)+'/'+str(c)
    l['text']=a
+   
+#to updat text   
 def num(n):
    global a,b,c,i
    if i==0:
@@ -55,6 +73,8 @@ def num(n):
    else :
       c=c*10+n
    text_update()
+   
+#if asked for result   
 def eq():
    global i,a,b,c,d
    if i==1:
@@ -73,6 +93,8 @@ def eq():
       d=b/c
       a=str(b)+'/'+str(c)+'='+str(d)
       l['text']=a
+      
+      
 root=Tk()
 root.configure()
 l = Label(root,text=a,height=2,width=10)
